@@ -15,13 +15,15 @@
 <body>
 
     <div class="container">
+            <div id="count">Start</div>
+
        
         <header>
             <h1>Trivia Game!</h1>
             <p>Test Your Knowledge of <strong>Cats</strong></p>
         </header>
         <section>
-            <div class="results"></div>
+            <div id="results"></div>
             <form name="quizForm" onsubmit="return submitAnswers()">
                 <h3>1. What do cats like to eat?</h3>
                 <input type="radio" name="q1" value="a" id="q1a"> a. Grass<br>
@@ -30,7 +32,7 @@
                 <input type="radio" name="q1" value="d" id="q1d"> d. Sushi<br>
 
                 <h3>2. What do cats do?</h3>
-                <input type="radio" name="q2" value="a" id="q2a">a. &lt;hunt&gt;<br>
+                <input type="radio" name="q2" value="a" id="q2a"> a. hunt<br>
                 <input type="radio" name="q2" value="b" id="q2b">b. &lt;watchTv&gt;<br>
                 <input type="radio" name="q2" value="c" id="q2c">c. &lt;thinkAbtLife&gt;<br>
                 <input type="radio" name="q2" value="d" id="q2d">d. &lt;eatSushi&gt;<br>

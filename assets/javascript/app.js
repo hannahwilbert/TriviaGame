@@ -3,6 +3,19 @@
 // timed for 30 seconds
 // when buttn pressed or timed out, scores display
 
+var count = 60;
+var interval = setInterval(function(){
+  document.getElementById('count').innerHTML=count;
+  count--;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML='Done';
+    // or...
+    alert("You're out of time!");
+    window.location.reload();
+  }
+}, 1000);
+
  function submitAnswers() {
      var total = 5;
      var score = 0;
@@ -40,11 +53,12 @@
 
     //  display results
     var results = document.getElementById('results');
-    results.innerHTML = '<h3>You Scored <span>' + score+'</span> out of <span>'+total+'</span></h3>';
-alert('You scored '+ score + ' out of ' + total)
-console.log(alert)
+    results.innerHTML = '<h3>You Scored ' + score+' out of '+total+'</h3>';
+alert('You scored '+ score + ' out of ' + total);
+console.log(alert);
 
-return false;
+
 
   
  }
+
