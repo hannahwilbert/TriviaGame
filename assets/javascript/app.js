@@ -3,18 +3,18 @@
 // timed for 30 seconds
 // when buttn pressed or timed out, scores display
 
-var count = 60;
-var interval = setInterval(function(){
-  document.getElementById('count').innerHTML=count;
-  count--;
-  if (count === 0){
-    clearInterval(interval);
-    document.getElementById('count').innerHTML='Done';
-    // or...
-    alert("You're out of time!");
-    window.location.reload();
-  }
-}, 1000);
+// var count = 60;
+// var interval = setInterval(function(){
+//   document.getElementById('count').innerHTML=count;
+//   count--;
+//   if (count === 0){
+//     clearInterval(interval);
+//     document.getElementById('count').innerHTML='Done';
+//     // or...
+//     alert("You're out of time!");
+//     window.location.reload();
+//   }
+// }, 1000);
 
  function submitAnswers() {
      var total = 5;
@@ -32,7 +32,7 @@ var interval = setInterval(function(){
 
     for(i = 1; i <= total; i++){
         if(eval('q' + i) === null || eval('q' + i) === '') {
-            alert('You missed question ' + i);
+            alert('You forgot to answer question ' + i);
             return false;
             console.log(alert)
         }

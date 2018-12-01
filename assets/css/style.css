@@ -1,6 +1,29 @@
-.jumbotron {
+.container {
     text-align: center;
-    margin: 20px 100px 0 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin: 20px 20% 0 20%;
+    
+}
 
+footer 
+{
+    border: 1px solid black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+
+.container {
+border: 1px solid black;
+}
+
+.questions {
+    margin-top: 50px;
+}
+
+.trivia-game {
+margin-top:20px;
 }
 
