@@ -1,8 +1,3 @@
-// PSEUDO CODING
-// multiple choice questions
-// timed for 30 seconds
-// when buttn pressed or timed out, scores display
-
 var count = 60;
 var interval = setInterval(function(){
   document.getElementById('count').innerHTML=count;
