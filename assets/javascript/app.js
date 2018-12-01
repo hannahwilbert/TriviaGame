@@ -3,18 +3,18 @@
 // timed for 30 seconds
 // when buttn pressed or timed out, scores display
 
-// var count = 60;
-// var interval = setInterval(function(){
-//   document.getElementById('count').innerHTML=count;
-//   count--;
-//   if (count === 0){
-//     clearInterval(interval);
-//     document.getElementById('count').innerHTML='Done';
-//     // or...
-//     alert("You're out of time!");
-//     window.location.reload();
-//   }
-// }, 1000);
+var count = 60;
+var interval = setInterval(function(){
+  document.getElementById('count').innerHTML=count;
+  count--;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML='Done';
+    // or...
+    alert("You're out of time!");
+    window.location.reload();
+  }
+}, 1000);
 
  function submitAnswers() {
      var total = 5;
